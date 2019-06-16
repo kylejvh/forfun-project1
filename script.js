@@ -6,5 +6,8 @@ audio.onload = audio.play();
 
 
 
+
+/* when the following keys are pressed, reveal all of the buttons. 
+
 // document.addEventListener('keydown', logKey);
     // if { logKey = s}
