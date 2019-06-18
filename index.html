@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Bada Bing!</title>
 </head>
 <body>
-    <img class="backgroundImage" src="bing.jpg">
+    <audio id="initialAudio">
+        <source src="out.mp3" type="audio/mpeg">
+        <source src="whattayahearwhattayasay.mp3" type="audio/mpeg">
+        <source src="canihelpyou.mp3" type="audio/mpeg">
+    </audio>
+    <img id="bingImage" class="visible" src="bing.jpg" onload="imgAudio()">
     <div class="formCheck">
-        <form name="checkforname" onsubmit="validateName()">Who is this?<br>
-        <input id="testform" type="text" name="hisname">
-        <input type="submit" value="Submit" name="hisname" >
-    </div>
-    <!-- 
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>     
-     -->
+        <!--<form name="hisname">
+            Who is this?<br>
+            <input id="testform" type="text" name="hisname">
+            <button onclick="validateName()" name="hisname">Submit2</button>
+           <input type="submit" value="Submit" name="hisname" action="#">
+        </form> -->
 
-</form>
+        <!-- only problem with the form now is that enter is not bound to submit.-->
+
+        Who is this?<br>
+       <input autofocus id="testform" type="text" name="hisname">  
+
+        
+        <button onclick="validateName()" name="hisname">Submit2</button>
+    </div>
+
+
+<!-- Ideas for layout: make a column layout with the names collapsed, 
+have images of each character next to the buttons. Upon collapsing, the h1 or button 
+moves to the top of the screen and the button catagories expand below. DESIGN FOR MOBILE FIRST
+-->
+
+
 </body>
 </html>

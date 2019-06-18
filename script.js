@@ -1,37 +1,39 @@
-let audioInitial = new Audio('out.mp3'); 
-audioInitial.onload = audioInitial.play();
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
 
-let audioSubmitTrue = new Audio('whattayahearwhattayasay.mp3');
-let audioSubmitFalse = new Audio('canihelpyou.mp3');
 
-function validateName() {
-   let nameCheck = document.getElementById("testform").value;
-    if (nameCheck == "Silvio") {
-        audioSubmitTrue.play();
-        alert("pass!");
-    }   else {
-        audioSubmitFalse.play();
-        alert("No disrespect T, maybe you oughta try again."); // change alert to trigger a picture to show,
-        return false;             // maybe change the message.
-    }
+ function imgAudio() {
+    document.getElementById('initialAudio').src = "out.mp3";
+    document.getElementById('initialAudio').play();
+ }
+
+
+function revealButtons() {
+    let animationTrigger = document.getElementById('bingImage');
+    animationTrigger.className = 'invisible';
 }
 
 
 
- /* let nameCheck = function validateName() {  // rename this function?
-    if  (document.getElementById("nameform") === "Tony") {
-        audioTony.play();
-    }   else { alert("No, you're Tony");
-   }
-} */
+
+// the simplest way to do this is to add 
+// a class to the animation to trigger it?
 
 
-// addEventListener.onkeydown = s, i, l, v, i, o
-
-
-
-
-// when the following keys are pressed, reveal all of the buttons.
-
-// document.addEventListener('keydown', logKey);
-    // if { logKey = s}
+function validateName() {
+   let nameCheck = document.getElementById('testform').value;
+    if (nameCheck == 'Silvio') {
+        document.getElementById('initialAudio').src = "whattayahearwhattayasay.mp3";
+        document.getElementById('initialAudio').play();
+        alert('pass!');  // change this alert...
+        revealButtons();
+        // call function here that hides img and shows list of sounds
+    }   else {
+        document.getElementById('initialAudio').src = "canihelpyou.mp3";
+        document.getElementById('initialAudio').play();
+        alert('No disrespect T, maybe you oughta try again.'); // change alert to trigger a picture to show  
+        // maybe change the message.
+    }
+}
