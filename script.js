@@ -4,16 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
- function imgAudio() {
-    document.getElementById('initialAudio').src = "out.mp3";
-    document.getElementById('initialAudio').play();
- }
-
-
 function revealButtons() {
     let animationTrigger = document.getElementById('bingImage');
     animationTrigger.className = 'invisible';
 }
+
+
+
+function soundSwitcher(soundfile) {
+document.getElementById('initialAudio').src = soundfile;
+document.getElementById('initialAudio').play();
+}
+
+
+
 
 
 
