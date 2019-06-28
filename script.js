@@ -1,22 +1,14 @@
-
-
-
-
-
-let coll = document.getElementsByClassName("collapseBtn");
-let i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.display == "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
   });
+
+
+function revealButtons() {
+    let animationTrigger = document.getElementById('bingImage');
+    animationTrigger.className = 'invisible';
 }
+
 
 
 function soundSwitcher(soundfile) {
@@ -39,8 +31,8 @@ function validateName() {
     if (nameCheck == 'Silvio') {
         document.getElementById('initialAudio').src = "whattayahearwhattayasay.mp3";
         document.getElementById('initialAudio').play();
-         // change this alert...
-        location.replace("soundboard.html");
+        alert('pass!');  // change this alert...
+        revealButtons();
         // call function here that hides img and shows list of sounds
     }   else {
         document.getElementById('initialAudio').src = "canihelpyou.mp3";
@@ -49,7 +41,3 @@ function validateName() {
         // maybe change the message.
     }
 }
-
-
-
-
