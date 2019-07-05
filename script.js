@@ -1,11 +1,23 @@
 "use strict";
 
+
+
+
+
+
 function soundSwitcher(soundfile) {
   document.getElementById('initialAudio').src = soundfile;
   document.getElementById('initialAudio').play();
   }
-  
 
+  window.onload = function onloadAudio() {
+    if (window.location.href.indexOf('index.html') > -1) {
+      soundSwitcher('out.mp3');
+    }
+  }
+
+
+ 
 
 let coll = document.getElementsByClassName("collapseBtn");
 let i;
@@ -21,14 +33,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-
-
-
-
-
-
-
 
 
 
