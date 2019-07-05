@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="style.css">
-    <script async src="script.js"></script>
-    <title>Bada Bing!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css">
+  <script async src="script.js"></script>
+  <title>Bada Bing!</title>
 </head>
 <body class="soundboard">
-    <audio id="initialAudio"></audio>
+  <audio id="initialAudio"></audio>
    
-
-    <form action="index.html">
-      <button class="miscButtons" type="submit">Go back</button>
+  <form action="index.html">
+    <button class="miscButtons" type="submit">Go back</button>
   </form>
-  
 
-
-    <div class="primaryFlexContainer">
-      <div class="secondaryFlexContainer">
+  <div class="primaryFlexContainer">
+    <div class="secondaryFlexContainer">
       <button class="collapseBtn">
         <img id="tonyButtonImage" src="tony.jpg">
         <p>Tony Soprano</p>
       </button>
-    
+  
       <div class="content">
-          <div>
+        <div>
           <p>Greetings</p>
           <button class="soundButton" onclick="soundSwitcher('soundfiles/tonygreetings/morningrat.mp3')">Good Morning Rat</button>
           <button class="soundButton" onclick="soundSwitcher('soundfiles/tonygreetings/heyvin.mp3')">Hey Vin</button>
@@ -62,42 +59,42 @@
     </div>
 
     <div class="secondaryFlexContainer">
-    <button class="collapseBtn">
-      <img id="paulieButtonImage" src="paulie.jpg"> 
-      <p>Paulie Walnuts</p>
-    </button>
-    <div class="content" id="paulieContent">
+      <button class="collapseBtn">
+        <img id="paulieButtonImage" src="paulie.jpg"> 
+        <p>Paulie Walnuts</p>
+      </button>
+      <div class="content" id="paulieContent">
+        <div>
+        <p>Greetings</p>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliecommendatore.mp3')">Commendatore!</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliekgb.mp3')">KGB, Open Up</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliebyebye.mp3')">Bye Bye</button>
+      </div>
       <div>
-      <p>Greetings</p>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliecommendatore.mp3')">Commendatore!</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliekgb.mp3')">KGB, Open Up</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliegreetings/pauliebyebye.mp3')">Bye Bye</button>
+        <p>Insults</p>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/paulieweak.mp3')">You're Weak</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/pauliebuildaramp.mp3')">Beansie's Ramp</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/pauliepullrank.mp3')">Pull Rank</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/paulieyouresanta.mp3')">You're Santa</button>
+      </div>
+      <div>
+        <p>Statements</p>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulieinteriordecorator.mp3')">Interior Decorator</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliepoisonivy.mp3')">Poison Ivy</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliebacteria.mp3')">Bacteria</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliehassidem.mp3')">Hassidem</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliesnakes.mp3')">Snakes</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulieyourelate.mp3')">You're late</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulienotapologizing.mp3')">No Apology</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliehesasking.mp3')">He's Asking</button>
+      </div>
+      <div>
+        <p>Questions</p>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/pauliebadabingcrosby.mp3')">Bada Bing Crosby</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/paulieembarrased.mp3')">You Embarrased?</button>
+        <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/paulienothincoming.mp3')">Nothing Coming</button>
+      </div>
     </div>
-    <div>
-      <p>Insults</p>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/paulieweak.mp3')">You're Weak</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/pauliebuildaramp.mp3')">Beansie's Ramp</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/pauliepullrank.mp3')">Pull Rank</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/paulieinsults-threats/paulieyouresanta.mp3')">You're Santa</button>
-    </div>
-    <div>
-      <p>Statements</p>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulieinteriordecorator.mp3')">Interior Decorator</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliepoisonivy.mp3')">Poison Ivy</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliebacteria.mp3')">Bacteria</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliehassidem.mp3')">Hassidem</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliesnakes.mp3')">Snakes</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulieyourelate.mp3')">You're late</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/paulienotapologizing.mp3')">No Apology</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliestatements/pauliehesasking.mp3')">He's Asking</button>
-    </div>
-    <div>
-      <p>Questions</p>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/pauliebadabingcrosby.mp3')">Bada Bing Crosby</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/paulieembarrased.mp3')">You Embarrased?</button>
-      <button class="soundButton" onclick="soundSwitcher('soundfiles/pauliequestions/paulienothincoming.mp3')">Nothing Coming</button>
-    </div>
-  </div>
 
   </div>
 
