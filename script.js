@@ -10,13 +10,13 @@ function soundSwitcher(soundfile) {
   document.getElementById('initialAudio').play();
   }
 
-  window.onload = function onloadAudio() {
-    if (window.location.href.indexOf('index.html') > -1) {
-      soundSwitcher('out.mp3');
-    }
+  // The following code sets the source of the homepage image so that browser caching is avoided, and the onload event is triggered properly.
+  
+  let bingImage = document.getElementById('bingImage');
+  bingImage.src = "bing.jpg"
+  document.getElementById('bingImage').onload = function() {
+    soundSwitcher('out.mp3');
   }
-
-
  
 
 let coll = document.getElementsByClassName("collapseBtn");
