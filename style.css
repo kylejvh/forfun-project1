@@ -1,3 +1,6 @@
+
+
+
 .indexbody {
     font-size: 32px;
     background-color:  rgb(46, 46, 46);
@@ -11,6 +14,18 @@
     
 }
 
+.bodyDiv {
+    padding-top: 10px;
+     
+}
+
+p {
+    color: red;
+    font-family: Mobsters;
+    font-size: 50px;
+    margin: 0;
+    padding: 5px 0 5px;
+}
 .soundboard {
     background: rgb(46, 46, 46)
 }
@@ -22,6 +37,7 @@
 }
 
 
+
 @font-face
 {
 font-family: Mobsters;
@@ -29,105 +45,250 @@ src: url('Mobsters.ttf');
 }
 
 
-.buttonContainer {
+
+
+.primaryFlexContainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+.secondaryFlexContainer {
+  display: flex;
+  flex-flow: row;
+}
+
+
+
+
+.soundButton {
+
+    height: 2em;
+    background-color: red;
+    font-family: 'Verdana';
+    font-size: .8em;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 3px 0 3px 0;
+}
+
+
+
+.soundButton:hover {
+    cursor: pointer;
+    background-color: rgb(1, 168, 1);
+}
+
+.miscButtons {
+    height: 2em;
+    background-color: red;
+    font-family: 'Verdana';
+    font-size: .8em;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 3px 0 3px 0;
+}
+
+.miscButtons:hover {
+    cursor: pointer;
+    background-color: rgb(109, 109, 109);
+    
+}
 
 .collapseBtn {
     font-family: Mobsters;
     font-size: 50px;
-    
+    border: 1px solid black;
+    border-radius: 20%;
+    background-color: black;
+    margin: 20px 10px 20px 10px;
+    height: auto;
+    max-width: 320px;
 }
 
 
-.active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
+.collapseBtn:hover {
+cursor: pointer;
+background-color: rgb(24, 24, 24);
+}
+
+.collapseBtn p {
+    color: red;
+    margin: 0;
+    padding: 5px 0 5px;
+    justify-content: center;
+    display: flex;
+}
 
 
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: rgb(46, 46, 46);
+}
 
+.content p {
+    height: 10%;
+    font-family: Mobsters;
+    font-size: 36px;
+    margin: 10px;
+    padding: 10px;
+    color: rgba(187, 5, 5, 0.959);
+    
+}
+
+.content div {
+display: flex;
+flex-flow: column wrap;
+margin: 10px;
+}
 
 #tonyButtonImage {
+    display: flex;
+    justify-content: center;
     height: auto;
     max-width: 300px;
+    border-radius: 20%;
 }
 
 
 
 
 #paulieButtonImage {
+    display: flex;
+    justify-content: center;
     height: auto;
     max-width: 300px;
+    border-radius: 20%;
 }
 
 
 #juniorButtonImage {
+    display: flex;
+    justify-content: center;
     height: auto;
     max-width: 300px;
+    border-radius: 20%;
 }
 
 
+@media (min-width: 2338px) {
 
 
-.content {
+
+
+
+   
+
+    
+    #tonyButtonImage {
+        height: auto;
+        max-width: 300px;
+        border-radius: 50px;
+    }
+    
+    
+    
+    
+    #paulieButtonImage {
+        height: auto;
+        max-width: 300px;
+        border-radius: 50px;
+       
+    }
+    
+    
+    #juniorButtonImage {
+        height: auto;
+        max-width: 300px;
+        border-radius: 50px;
+    }
+    
+    
+    
+    .soundButton {
+        height: 2em;
+        margin: 5px 0 5px 0;
+        background-color: red;
+        font-family: "Trebuchet MS";
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .soundButton:hover {
+        cursor: pointer;
+        background-color: rgb(1, 168, 1);
+    }
+    
+    
+    
+    .collapseBtn {
+        font-family: Mobsters;
+        font-size: 50px;
+        border: 3px solid black;
+        border-radius: 20%;
+        background-color: black;
+        width: 320px;
+        height: auto;
+    }
+    
+    .collapseBtn:hover {
+    cursor: pointer;
+    background-color: rgb(24, 24, 24);
+    }
+    
+    .collapseBtn p {
+        color: red;
+        margin: 0;
+    }
+    
+    
+    .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
-  }
-
-/* .backgroundImage {
-    animation: fade-out ease 0.4s forwards;
-    animation-duration: 2s;
-}
-*/
-
-/* img.visible {
-    opacity: 1;
-}
-
-img.invisible {
-    opacity: 0;
-    animation: fade-out ease 1.75s forwards;
-}
-
-div.soundboardButtons {
-    opacity: 0;
-    animation: fade-in ease 5s forwards;
-}
-*/
-/* THIS SECTION OF CODE IS FOR THE REVEAL FUNCTION, TO REVEAL ALL SOUNDBOARD
-ELEMENTS */
-
-
-/* this will fade out background image */
-
-/*
-@keyframes fade-out { 
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
+    background-color: rgb(46, 46, 46);
     }
-*/
-
-
-
- /* this will fade in all soundboard elements, you need to
- use JS to either create or execute this CSS.  */
-
-  /*  @keyframes  fade-in {
-         from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+    
+    .content p {
+        height: 10%;
+        font-family: Mobsters;
+        font-size: 36px;
+        margin: 10px;
+        padding: 10px;
+        color: rgba(187, 5, 5, 0.959);
+        
     }
-    */
+    
+    .content div {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .content {
+    padding: 0 18px;
+    display: none;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(46, 46, 46);
+}
+
+.soundButton {
+    height: 75px;
+    width: 100px;
+    
+    background-color: green;
+    font-family: "Trebuchet MS";
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+}
