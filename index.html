@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Bada Bing!</title>
 </head>
-<body class="indexbody" onload="soundSwitcher('out.mp3')">
+<body class="indexbody">
     <audio id="initialAudio">
         
     </audio>
 
 <div class="bodyDiv">
     <img id="bingImage" class="visible" src="bing.jpg">
-    <div class="formCheck">
+    <div class="formCheck" onload="soundSwitcher('out.mp3')">
         <!--<form name="hisname">
             Who is this?<br>
             <input id="testform" type="text" name="hisname">

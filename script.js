@@ -1,3 +1,5 @@
+"use strict";
+
 function soundSwitcher(soundfile) {
   document.getElementById('initialAudio').src = soundfile;
   document.getElementById('initialAudio').play();
